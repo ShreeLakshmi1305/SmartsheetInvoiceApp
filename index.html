@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartsheet Invoice Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Smartsheet Invoice Builder</h1>
+        <label for="accessToken">Access Token:</label>
+        <input type="text" id="accessToken" placeholder="Enter your Smartsheet Access Token">
+        
+        <button id="loadSheets">Load Sheets</button>
+        
+        <label for="sheetSelect">Select Sheet:</label>
+        <select id="sheetSelect"></select>
+        
+        <label for="columnSelect">Select Column for Invoice:</label>
+        <select id="columnSelect"></select>
+        
+        <button id="generateInvoice">Generate Invoice</button>
+        
+        <div id="invoiceOutput"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
